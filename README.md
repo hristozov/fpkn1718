@@ -1,4 +1,4 @@
-λ (2015/2016)
+λ (2017/2018)
 =============
 
 [![Build Status](https://travis-ci.org/hristozov/fpkn1516.svg)](https://travis-ci.org/hristozov/fpkn1516)

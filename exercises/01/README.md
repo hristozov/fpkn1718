@@ -15,3 +15,6 @@
 
 * [Scheme в Wikipedia](https://en.wikipedia.org/wiki/Scheme_(programming_language))
 * [Lambda calculus в Wikipedia](https://en.wikipedia.org/wiki/Lambda_calculus)
+* [Scheme: Simple expressions в Wikibooks](https://en.wikibooks.org/wiki/Scheme_Programming/Simple_Expressions)
+* [Scheme: Simple maths в Wikibooks](https://en.wikibooks.org/wiki/Scheme_Programming/Simple_Maths)
+* [Scheme: Conditionals в Wikibooks](https://en.wikibooks.org/wiki/Scheme_Programming/Conditionals)

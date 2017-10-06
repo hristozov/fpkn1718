@@ -1,5 +1,6 @@
 (load "../../lib/scm/unit.scm")
 
+; Събира числа :)
 (define (add a b)
   (+ a b))
 

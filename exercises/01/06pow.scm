@@ -1,5 +1,7 @@
 (load "../../lib/scm/unit.scm")
 
+; Вдига x на степен n.
+; Подобно е на вградената функция expt.
 (define (pow x n)
   (if (= 0 n)
       1

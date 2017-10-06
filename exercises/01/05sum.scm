@@ -1,5 +1,7 @@
 (load "../../lib/scm/unit.scm")
 
+; Сумира числата в даден интервал.
+; start последователно обхожда целия интервал.
 (define (sum start end)
   (if (>= start end)
       end

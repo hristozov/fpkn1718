@@ -1,10 +1,8 @@
 (load "../../lib/scm/unit.scm")
+(load "../01/04fact.scm")
 
-(define (fact n)
-  (if (<= n 1)
-      1
-      (* n (fact (- n 1)))))
-
+; Смята cos с ред на Тейлър.
+; Обърнете внимание, че разликата с ex е само във функцията term.
 (define (cos-iter x)
   (define iterations 50)
   (define (term n)

@@ -7,10 +7,15 @@
 ; да вадим последните му m цифри и да ги сравним с a. Ако a се съдържа в n, на
 ; някоя от стъпките този остатък ще е равен на a.
 (define (substr? n a)
+  ; Помощна функция, която проверява дали числото завършва на a.
+  (define (ends-with-a? i)
+    (= (remainder i (expt 10 (count-digits-iter a)))
+       a))
+  ; Тук на всяка стъпка махаме цифра и гледаме дали резултатът завършва на a.
   (define (helper i)
     (cond
        ((< i a) #f)
-       ((= a (remainder i (expt 10 (count-digits-iter a)))) #t)
+       ((ends-with-a? i) #t)
        (else (helper (quotient i 10)))))
   (helper n))
 

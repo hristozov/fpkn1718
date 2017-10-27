@@ -13,16 +13,16 @@
 ; клонят към корен квадратен от x.
 (define (sqrt-iter x)
   (define epsilon 0.01)
-  (define (good-enough? rn)
-    (< (abs (- (* rn rn) x))
+  (define (good-enough? tn)
+    (< (abs (- (* tn tn) x))
        epsilon))
-  (define (improve rn)
-    (/ (+ rn (/ x rn))
+  (define (next tn)
+    (/ (+ tn (/ x tn))
        2))
-  (define (helper rn)
-    (if (good-enough? rn)
-        rn
-        (helper (improve rn))))
+  (define (helper tn)
+    (if (good-enough? tn)
+        tn
+        (helper (next tn))))
   (helper 1))
 
 (assert-approx 4 0.01 (sqrt-iter 16))

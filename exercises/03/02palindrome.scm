@@ -7,12 +7,12 @@
 ; на оставащата част от числото, което обръщаме. Ако се затруднявате с това
 ; решение, опитайте се първо да разгледате reverse.
 (define (palindrome? n)
-  (define (helper i reverse-i)
+  (define (helper current result)
     (cond
-      ((< i reverse-i) #f)
-      ((or (= i reverse-i) (= (quotient i 10) reverse-i)) #t)
-      (else (helper (quotient i 10)
-                    (+ (* reverse-i 10) (remainder i 10))))))
+      ((< current result) #f)
+      ((or (= current result) (= (quotient current 10) result)) #t)
+      (else (helper (quotient current 10)
+                    (+ (* result 10) (remainder current 10))))))
   (if (= 0 (remainder n 10))
       #f
       (helper n 0)))

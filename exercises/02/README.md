@@ -10,3 +10,9 @@
 * Моделиране на линейна рекурсия с [итеративни процеси](https://mitpress.mit.edu/sicp/chapter1/node12.html). Оптимизиране с [опашкова рекурсия](http://en.wikipedia.org/wiki/Tail_call). Пример със [`(sum start end)`](07sum-iter.scm).
 * [`(count-digits-iter n)`](08count-digits-iter.scm) - итеративно броене на цифри
 * [`(sum-digits-iter n)`](09sum-digits-iter.scm) - итеративно сумиране на цифри
+
+Ресурси
+=======
+* [Итеративни процеси в SICP](https://mitpress.mit.edu/sicp/chapter1/node12.html)
+* [Опашкова рекурсия](http://en.wikipedia.org/wiki/Tail_call)
+* [Call stack](https://en.wikipedia.org/wiki/Call_stack)

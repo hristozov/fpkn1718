@@ -9,3 +9,7 @@
 * [`(ex x)`](06ex.scm) - изчисляване на e^x с ред на Тейлър
 * [`(my-cos x)`](07cos.scm) - изчисляване на cos с ред на Тейлър
 
+Ресурси
+=======
+* [Дървовидна рекурсия в SICP](https://mitpress.mit.edu/sicp/chapter1/node13.html)
+* [Списък с редове на Тейлър (Маклорън) за някои по-популярни функции](https://en.wikipedia.org/wiki/Taylor_series#List_of_Maclaurin_series_of_some_common_functions)

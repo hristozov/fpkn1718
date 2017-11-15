@@ -12,3 +12,5 @@
   * [`(list? <list>) -> boolean`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_414) - проверява дали нещо е списък
 - Обръщане на списък (`reverse`)
 - Операции със списъци, представящи множества - `union` и `intersection`.
+- Броене на срещанията на един списък като последователност от елементи в друг ([`count-occurences`](09count-occurences.scm)).
+- ([`construct-list`](10construct-list.scm)).

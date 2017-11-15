@@ -10,7 +10,12 @@
   * [`(list <element> <element> ... <element>) -> <list>`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_416) - създава списък от зададени елементи (може и с ```(<element> <element> ... <element>)```, ако елементите са атоми)
   * [`(null? <list>) -> boolean`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_410) - проверява дали нещо е празният списък
   * [`(list? <list>) -> boolean`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_414) - проверява дали нещо е списък
-- Обръщане на списък (`reverse`)
-- Операции със списъци, представящи множества - `union` и `intersection`.
-- Броене на срещанията на един списък като последователност от елементи в друг ([`count-occurences`](09count-occurences.scm)).
-- ([`construct-list`](10construct-list.scm)).
+- [`(member x l)`](01member.scm) - предикат за проверка (с `=`) дали `x` се среща в списъка `l`; подобно на вградения `member`
+- [`(my-length l)`](02length.scm) - дължина на списъка `l`; като вградения `length`
+- [`(nth l n)`](03nth.scm) - `n`-ти елемент в списъка `l`; като вградената `list-ref`
+- [`(my-append l1 l2)`](04append.scm) - „залепя“ два списъка; като вградения `append`
+- [`(range start end)`](05range.scm) - списък с елементите в даден интервал (`[start; end]`)
+- [`(my-reverse l)`](06reverse.scm) - обръща списък; като вградения `reverse`
+- [`(union l1 l2)`](07union.scm) и [`(intersection l1 l2)`](08intersection.scm) - операции със списъци, представящи множества
+- [`(count-occurences l1 l2)`](09count-occurences.scm) - броене на срещанията на списъка `l2` като последователност от елементи в списъка `l1`
+- ([`(construct-list n)`](10construct-list.scm)) - конструира списък от вида `((n n-1 ... 1) (n-1 n-2 ... 1) ... (2 1) (1))`

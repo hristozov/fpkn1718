@@ -12,7 +12,7 @@
   * [`(list? <list>) -> boolean`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_414) - проверява дали нещо е списък
 - [`(member x l)`](01member.scm) - предикат за проверка (с `=`) дали `x` се среща в списъка `l`; подобно на вградения `member`
 - [`(my-length l)`](02length.scm) - дължина на списъка `l`; като вградения `length`
-- [`(nth l n)`](03nth.scm) - `n`-ти елемент в списъка `l`; като вградената `list-ref`
+- [`(nth l n)`](03nth.scm) - `n`-ти елемент в списъка `l`; като вградената `list-ref`
 - [`(my-append l1 l2)`](04append.scm) - „залепя“ два списъка; като вградения `append`
 - [`(range start end)`](05range.scm) - списък с елементите в даден интервал (`[start; end]`)
 - [`(my-reverse l)`](06reverse.scm) - обръща списък; като вградения `reverse`

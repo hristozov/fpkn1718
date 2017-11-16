@@ -10,6 +10,7 @@
   * [`(list <element> <element> ... <element>) -> <list>`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_416) - създава списък от зададени елементи (може и с ```(<element> <element> ... <element>)```, ако елементите са атоми)
   * [`(null? <list>) -> boolean`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_410) - проверява дали нещо е празният списък
   * [`(list? <list>) -> boolean`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_414) - проверява дали нещо е списък
+  * [`(list-ref <list> <i>)`](http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_idx_426) - връща `i`-тия елемент от списък
 - [`(member x l)`](01member.scm) - предикат за проверка (с `=`) дали `x` се среща в списъка `l`; подобно на вградения `member`
 - [`(my-length l)`](02length.scm) - дължина на списъка `l`; като вградения `length`
 - [`(nth l n)`](03nth.scm) - `n`-ти елемент в списъка `l`; като вградената `list-ref`
